@@ -55,7 +55,7 @@ begin
               "  Operation: Add              , SEL: "     & to_hxstring(SEL_i) &
               "  A_i: "                      & to_hxstring(A_i)   &
               "  B_i: "                      & to_hxstring(B_i)   &
-              "       expected_RES: "       & to_hxstring(expected_RES));
+              "       expected_RES: "        & to_hxstring(expected_RES));
         when "001" =>
             expected_RES <= A_i - B_i after tperiod_Clk;
             AffirmIfEqual(
