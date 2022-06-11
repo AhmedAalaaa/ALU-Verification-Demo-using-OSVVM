@@ -29,4 +29,4 @@ In our case it will be the ALU VHDL code which is intended to be tested, which i
 | NOT A       | 110         |
 | A XOR B     | 111         |
 
-And the output will be delayed one clock cycle from the input due to additional register has been added at the output port.
+And the output will be delayed one clock cycle from the input due to an additional register has been added at the output port.
