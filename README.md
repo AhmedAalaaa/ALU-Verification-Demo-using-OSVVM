@@ -53,3 +53,31 @@ First you need to download the OsvvmLibraries, you can simply run this command:
 ```
   $ git clone --recursive https://github.com/osvvm/OsvvmLibraries
 ```
+after you successfully download the Libraries, you will now need a simulator that can compile VHDL - 2008
+
+Now go to the directory that you have donwloaded the OsvvmLibraries and create a foleder called "sim", open your simulator (in my case ModelSim HDL Simulator), and in the TCL console change the directory to the "sim" directory that you hvae created before and run these commands.
+```
+source ../OsvvmLibraries/Scripts/StartUp.tcl
+build ../OsvvmLibraries/OsvvmLibraries.pro
+build ../OsvvmLibraries/DpRam/RunAllTests.pro
+```
+
+Now open a new project and add all the soucre files and the testbench files in this project and run this script:
+```
+source ../OsvvmLibraries/ALU/run.tcl
+```
+
+Now go to the "sim" directory you will find the Test report has been generated.
+```
+%% Log   PASSED  in ALU_INST,   Operation: Add              , SEL: 0  A_i: 0  B_i: 0       expected_RES: U Received : U at 0 ns
+%% Log   PASSED  in ALU_INST,   Operation: NOT A            , SEL: 6  A_i: F  B_i: F       expected_RES: 0 Received : 0 at 77 ns
+%% Log   PASSED  in ALU_INST,   Operation: A + 1            , SEL: 3  A_i: 0  B_i: 0       expected_RES: 0 Received : 0 at 87 ns
+%% Log   PASSED  in ALU_INST,   Operation: NOT A            , SEL: 6  A_i: 3  B_i: D       expected_RES: 1 Received : 1 at 97 ns
+%% Log   PASSED  in ALU_INST,   Operation: NOT A            , SEL: 6  A_i: D  B_i: 2       expected_RES: C Received : C at 107 ns
+%% Log   PASSED  in ALU_INST,   Operation: NOT A            , SEL: 6  A_i: 4  B_i: 4       expected_RES: 2 Received : 2 at 117 ns
+%% Log   PASSED  in ALU_INST,   Operation: A XOR B          , SEL: 7  A_i: 9  B_i: C       expected_RES: B Received : B at 127 ns
+%% Log   PASSED  in ALU_INST,   Operation: A XOR B          , SEL: 7  A_i: 5  B_i: F       expected_RES: 5 Received : 5 at 137 ns
+...
+...
+...
+```
