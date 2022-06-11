@@ -91,7 +91,7 @@ Now go to the "sim" directory you will find the Test report has been generated.
 %% Log   PASSED  in ALU_INST,   Operation: A + 1            , SEL: 3  A_i: 7  B_i: 4       expected_RES: 0 Received : 0 at 8127 ns
 %% Log   PASSED  in ALU_INST,   Operation: Add              , SEL: 0  A_i: B  B_i: E       expected_RES: 8 Received : 8 at 8137 ns
 ```
-Note: Do not forget that the result will be delayed one clock cycle due to the register on the output so the result and the expected result will be calculated for the previos opertion and this is handled in the VC. 
+**Note**: Do not forget that the result will be delayed one clock cycle due to the register on the output so the result and the expected result will be calculated for the previos opertion and this is handled in the VC. 
 
 ### snippt from the waveform 
 ![image](https://user-images.githubusercontent.com/64384499/173166847-14bbfbb2-5921-485c-a911-fb91ce8f9b5b.png)
