@@ -30,3 +30,14 @@ In our case it will be the ALU VHDL code which is intended to be tested, which i
 | A XOR B     | 111         |
 
 And the output will be delayed one clock cycle from the input due to an additional register has been added at the output port.
+
+### The Test Sequencer/ Control
+The Test Control contains the test cases that will be fed into our model, in this design there are two main packages have been used from Osvvm Libraries
+```vhdl
+{
+  library osvvm;
+  context osvvm.OsvvmContext ;
+  use osvvm.RandomPkg.all;
+  use osvvm.CoveragePkg.all;
+}
+```
