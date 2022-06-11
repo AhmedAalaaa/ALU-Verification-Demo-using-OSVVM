@@ -15,3 +15,17 @@ The top level testbench Framwork which called sometimes (Test Harness) contains 
 </ul>
 
 ![osvvm](https://user-images.githubusercontent.com/64384499/173164756-8923b930-0172-4c1c-8d1b-1b7213fafbd6.png)
+
+### The DUT
+In our case it will be the ALU VHDL code which intended to be tested, which is a simple design for ALU whcich contains the follwoing operations:
+| Operation   | SEL         |
+| :----:      | :----:      |
+| Addition    | 000         |
+| Subtraction | 001         |
+| A - 1       | 010         |
+| A + 1       | 011         |
+| A AND B     | 100         |
+| A OR  B     | 101         |
+| NOT A       | 110         |
+| A XOR B     | 111         |
+
