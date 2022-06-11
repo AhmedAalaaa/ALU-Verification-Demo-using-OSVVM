@@ -84,4 +84,4 @@ Now go to the "sim" directory you will find the Test report has been generated.
 Note: Do not forget that the result will be delayed one clock cycle due to the register on the output so the result and the expected result will be calculated for the previos opertion and this is handled in the VC. 
 
 ### snippt from the waveform 
-![image](https://user-images.githubusercontent.com/64384499/173166653-fc64a8b2-04b1-4f08-bcef-472a0f2b0909.png)
+![image](https://user-images.githubusercontent.com/64384499/173166701-ddf15ad2-4d71-441e-b75d-1234b9af09f5.png)
