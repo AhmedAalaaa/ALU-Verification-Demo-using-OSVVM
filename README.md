@@ -40,3 +40,11 @@ The Test Control contains the test cases that will be fed into our model, in thi
     use osvvm.CoveragePkg.all;
 ```
 The Randomization Package to feed the inputs signals with random values and the Coverage Package to assure that we have covered all the possible combinations on the inputs.
+
+### Verification Component (ALUController)
+The main purpose to this component to compare the output of the DUT with our golded model (the expected result), the main package used here is the Scoreboard Package.
+```vhdl
+library osvvm;
+  context osvvm.OsvvmContext;
+  use osvvm.ScoreboardPkg_slv.all;
+```
