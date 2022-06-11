@@ -48,3 +48,8 @@ library osvvm;
   context osvvm.OsvvmContext;
   use osvvm.ScoreboardPkg_slv.all;
 ```
+## How to run this demo
+First you need to download the OsvvmLibraries, you can simply run this command:
+```
+  $ git clone --recursive https://github.com/osvvm/OsvvmLibraries
+```
