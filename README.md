@@ -32,10 +32,11 @@ In our case it will be the ALU VHDL code which is intended to be tested, which i
 And the output will be delayed one clock cycle from the input due to an additional register has been added at the output port.
 
 ### The Test Sequencer/ Control
-The Test Control contains the test cases that will be fed into our model, in this design there are two main packages have been used from Osvvm Libraries
+The Test Control contains the test cases that will be fed into our model, in this design there are two main packages have been used from OSVVM Libraries
 ```vhdl
   library osvvm;
     context osvvm.OsvvmContext ;
     use osvvm.RandomPkg.all;
     use osvvm.CoveragePkg.all;
 ```
+The Randomization Package to feed the inputs signals with random values and the Coverage Package to assure that we have covered all the possible combinations on the inputs.
