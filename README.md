@@ -14,7 +14,7 @@ The top level testbench Framwork which called sometimes (Test Harness) contains 
   <li>The Verification Component</li>
 </ul>
 
-![osvvm](https://user-images.githubusercontent.com/64384499/173165342-ed95767b-fb15-4f03-8588-377fcef109c0.png)
+![test_harness](https://user-images.githubusercontent.com/64384499/173185499-421fd013-2f22-4793-9fd5-e3c845a342bf.png)
 
 ### The DUT
 In our case it will be the ALU VHDL code which is intended to be tested, which it is a simple design for ALU whcich contains the follwoing operations:
