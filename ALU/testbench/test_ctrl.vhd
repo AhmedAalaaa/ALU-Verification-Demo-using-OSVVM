@@ -77,7 +77,7 @@ begin
     RndSEL.setRandomParm(NORMAL, 8.0, 3.0);
 
     -- allDone indicates end of test and NOW < 1ms is a timeout in case allDone is not asserted
-    while not allDone and (NOW < 0.01 ms)  loop
+    while not allDone and (NOW < 1 ms)  loop
 
         -- Generate random variables
         SEL <= RndSEL.Randslv(0,  7, 3);
