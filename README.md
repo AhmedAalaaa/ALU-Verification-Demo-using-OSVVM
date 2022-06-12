@@ -90,6 +90,12 @@ Now go to the "sim" directory you will find the Test report has been generated.
 %% Log   PASSED  in ALU_INST,   Operation: A XOR B          , SEL: 7  A_i: D  B_i: D       expected_RES: 0 Received : 0 at 8117 ns
 %% Log   PASSED  in ALU_INST,   Operation: A + 1            , SEL: 3  A_i: 7  B_i: 4       expected_RES: 0 Received : 0 at 8127 ns
 %% Log   PASSED  in ALU_INST,   Operation: Add              , SEL: 0  A_i: B  B_i: E       expected_RES: 8 Received : 8 at 8137 ns
+...
+...
+...
+# ** Note: Coverage holes in A x B  x SEL = 0
+#    Time: 8148 ns  Iteration: 1  Instance: /tbalu/TestCtrl_1
+# %% DONE  PASSED  ALUCtrl  Passed: 808  Affirmations Checked: 808  at 8148 ns
 ```
 **Note**: Do not forget that the result will be delayed one clock cycle due to the register on the output so the result and the expected result will be calculated for the previos opertion and this is handled in the VC. 
 
