@@ -187,8 +187,6 @@ begin
     report "Coverage holes in A x B  x SEL = " & to_string(cp_A_B_SEL.CountCovHoles);
     
     if STOP = TRUE then
-      -- TranscriptClose ; 
-      -- EndOfTestReports ;
       test_done_o <= '1';
 	  wait for 5 * OP_DELAY;
       report "End of simulation" severity failure;
