@@ -59,7 +59,7 @@ Now go to the directory that you have donwloaded the OsvvmLibraries and create a
 ```
 source ../OsvvmLibraries/Scripts/StartUp.tcl
 build ../OsvvmLibraries/OsvvmLibraries.pro
-build ../OsvvmLibraries/DpRam/RunAllTests.pro
+build ../OsvvmLibraries/ALU/RunAllTests.pro
 ```
 
 Now open a new project and add all the soucre files and the testbench files in this project and run this script:
